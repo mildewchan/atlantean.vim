@@ -56,7 +56,7 @@ let s:color_xterm = {
   \ '#005f87': [24],
   \ '#7d8b96': [245],
   \ '#d7d7ff': [189],
-  \ '#008787': [109], 
+  \ '#008787': [30], 
   \ }
 
 function! s:hi(item, fg, bg)
@@ -83,7 +83,7 @@ call s:ahi("Normal", "PaleTurqouise", "Grey3")
 call s:ahi("LineNr", "SharkGrey", "Grey2")
 call s:ahi("String", "SharkGrey", "NONE")
 call s:ahi("Comment", "AnotherTurqouise", "NONE")
-call s:ahi("Delimiter", "SteelBlue", "NONE")
+call s:ahi("Delimiter", "CadetBlue", "NONE")
 call s:ahi("Identifier", "IndianRed", "NONE")
 
 "hi CTagsMember -- no settings --
