@@ -40,7 +40,7 @@ let s:color_alias = {
   \ 'DiffText': '#afd7d7',
   \ 'DiffAdd': '#wtfpla',
   \ }
-
+" TODO: correct the codes now that it looks OK
 let s:color_xterm = {
   \ '#000000': [16],
   \ '#ffffff': [231],
@@ -62,7 +62,7 @@ let s:color_xterm = {
   \ '#d78787': [153],
   \ '#afd7d7': [217],
   \ '#wtfpla': [158],
-  \ '#008787': [30, 109],
+  \ '#008787': [109, 30],
   \ } " 181 -> 224
 
 function! s:hi(item, fg, bg)
@@ -90,7 +90,7 @@ call s:ahi("LineNr", "SharkGrey", "Grey2")
 call s:ahi("String", "SharkGrey", "NONE")
 call s:ahi("Comment", "AnotherTurqouise", "NONE")
 call s:ahi("Delimiter", "CadetBlue", "NONE")
-call s:ahi("Identifier", "IndianRed", "NONE")
+call s:ahi("Identifier", "CadetBlue", "NONE")
 call s:ahi("Statement", "SteelBlue", "NONE")
 call s:ahi("Function", "DeepSkyBlue", "NONE")
 call s:ahi("Type", "SteelBlue", "NONE")
@@ -104,6 +104,7 @@ call s:ahi("Special", "IndianRed", "NONE")
 call s:ahi("Exception", "IndianRed", "NONE")
 call s:ahi("SpecialComment", "IndianRed", "NONE")
 call s:ahi("SpecialChar", "IndianRed", "NONE")
+call s:ahi("Todo", "IndianRed", "NONE")
 call s:ahi("Constant", "SteelBlue", "NONE")
 call s:ahi("Conditional", "SteelBlue", "NONE")
 call s:ahi("Repeat", "SteelBlue", "NONE")
@@ -166,7 +167,7 @@ hi PMenuSbar guifg=NONE guibg=#848688 guisp=#848688 gui=NONE ctermfg=NONE ctermb
 "hi SpecialChar guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 "hi Conditional guifg=#d75f5f guibg=NONE guisp=NONE gui=bold ctermfg=167 ctermbg=NONE cterm=bold
 "hi StorageClass guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
-hi Todo guifg=#F9F9FF guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=189 ctermbg=1 cterm=NONE
+"hi Todo guifg=#F9F9FF guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=189 ctermbg=1 cterm=NONE
 "hi Special guifg=#d75f5f guibg=NONE guisp=NONE gui=NONE ctermfg=167 ctermbg=NONE cterm=NONE
 "hi LineNr guifg=#5f5f87 guibg=#c8cbcc guisp=#c8cbcc gui=NONE ctermfg=60 ctermbg=252 cterm=NONE
 hi StatusLine guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=bold ctermfg=235 ctermbg=1 cterm=bold
