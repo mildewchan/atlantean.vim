@@ -35,12 +35,12 @@ let s:color_alias = {
   \ 'DeepSkyBlue': '#005f87',
   \ 'LightSteelBlue': '#d7d7ff',
   \ 'SharkGrey': '#7d8b96',
-  \ 'AnotherTurqouise': '#008787',
-  \ 'DiffChange': '#d78787',
-  \ 'DiffText': '#afd7d7',
-  \ 'DiffAdd': '#wtfpla',
+  \ 'MutedTurqouise': '#87afaf',
+  \ 'VeryLightSkyBlue': '#afd7ff',
+  \ 'MildPink': '#ffafaf',
+  \ 'MildGreen': '#afffd7',
   \ }
-" TODO: correct the codes now that it looks OK
+
 let s:color_xterm = {
   \ '#000000': [16],
   \ '#ffffff': [231],
@@ -59,11 +59,11 @@ let s:color_xterm = {
   \ '#005f87': [24],
   \ '#7d8b96': [245],
   \ '#d7d7ff': [189],
-  \ '#d78787': [153],
-  \ '#afd7d7': [217],
-  \ '#wtfpla': [158],
-  \ '#008787': [109, 30],
-  \ } " 181 -> 224
+  \ '#afd7ff': [153],
+  \ '#ffafaf': [217],
+  \ '#afffd7': [158],
+  \ '#87afaf': [109],
+  \ }
 
 function! s:hi(item, fg, bg)
   " default -> bright red -> undefined behavior
@@ -88,7 +88,7 @@ call s:ahi("User3", "Grey3", "PaleTurqouise")
 call s:ahi("Normal", "PaleTurqouise", "Grey3")
 call s:ahi("LineNr", "SharkGrey", "Grey2")
 call s:ahi("String", "SharkGrey", "NONE")
-call s:ahi("Comment", "AnotherTurqouise", "NONE")
+call s:ahi("Comment", "MutedTurqouise", "NONE")
 call s:ahi("Delimiter", "CadetBlue", "NONE")
 call s:ahi("Identifier", "CadetBlue", "NONE")
 call s:ahi("Statement", "SteelBlue", "NONE")
@@ -114,10 +114,10 @@ call s:ahi("TabLineSel", "White", "IndianRed")
 call s:ahi("TabLineFill", "Grey3", "Grey3")
 call s:ahi("PMenu", "SteelBlue", "Grey2")
 call s:ahi("PMenuSel", "White", "SteelBlue")
-call s:ahi("DiffChange", "NONE", "DiffChange")
-call s:ahi("DiffText", "NONE", "DiffText")
-call s:ahi("DiffDelete", "NONE", "DiffText")
-call s:ahi("DiffAdd", "NONE", "DiffAdd")
+call s:ahi("DiffChange", "NONE", "VeryLightSkyBlue")
+call s:ahi("DiffText", "NONE", "MildPink")
+call s:ahi("DiffDelete", "NONE", "MildPink")
+call s:ahi("DiffAdd", "NONE", "MildGreen")
 "hi DiffAdd guifg=NONE guibg=#193224 guisp=#193224 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 "hi DiffDelete guifg=NONE guibg=#192224 guisp=#192224 gui=NONE ctermfg=NONE ctermbg=235 cterm=NONE
 "hi DiffChange guifg=NONE guibg=#492224 guisp=#492224 gui=NONE ctermfg=NONE ctermbg=52 cterm=NONE
