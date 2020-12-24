@@ -83,7 +83,7 @@ endfunction
 
 call s:ahi("User1", "White", "SteelBlue")
 call s:ahi("User2", "SharkGrey", "Grey2")
-call s:ahi("User3", "Grey3", "PaleTurqouise")
+call s:ahi("User3", "White", "MutedTurqouise")
 
 call s:ahi("Normal", "PaleTurqouise", "Grey3")
 call s:ahi("LineNr", "SharkGrey", "Grey2")
