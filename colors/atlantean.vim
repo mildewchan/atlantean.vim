@@ -219,13 +219,3 @@ hi SpellBad guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 
 hi Directory guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Underlined guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
 hi cursorim guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
-
-function! g:SharklineMode()
-  let l:mode_map = {
-    \ 'n': 'NORMAL', 'i': 'INSERT', 'R': 'REPLACE',
-    \ 'v': 'VISUAL', 'V': 'V-LINE', "\<C-v>": 'V-BLOCK',
-    \ 'c': 'COMMAND', 's': 'SELECT', 'S': 'S-LINE',
-    \ "\<C-s>": 'S-BLOCK', 't': 'TERMINAL',
-    \   }
-  return get(l:mode_map, mode(), "BLACK MAGIC")
-endfunction
