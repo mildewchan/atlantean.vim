@@ -119,6 +119,8 @@ call s:ahi("DiffText", "NONE", "MildPink")
 call s:ahi("DiffDelete", "NONE", "MildPink")
 call s:ahi("DiffAdd", "NONE", "MildGreen")
 call s:ahi("Underlined", "SteelBlue", "NONE")
+call s:ahi("Title", "IndianRed", "NONE")
+"hi Title guifg=#d75f5f guibg=#e4e4e4 guisp=#e4e4e4 gui=bold ctermfg=167 ctermbg=254 cterm=bold
 "hi Underlined guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
 "hi DiffAdd guifg=NONE guibg=#193224 guisp=#193224 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 "hi DiffDelete guifg=NONE guibg=#192224 guisp=#192224 gui=NONE ctermfg=NONE ctermbg=235 cterm=NONE
@@ -177,11 +179,11 @@ call s:ahi("Underlined", "SteelBlue", "NONE")
 "hi String guifg=#696969 guibg=NONE guisp=NONE gui=NONE ctermfg=242 ctermbg=NONE cterm=NONE
 "hi Repeat guifg=#d75f5f guibg=NONE guisp=NONE gui=bold ctermfg=167 ctermbg=NONE cterm=bold
 "hi Underlined guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
+"hi Title guifg=#d75f5f guibg=#e4e4e4 guisp=#e4e4e4 gui=bold ctermfg=167 ctermbg=254 cterm=bold
 hi IncSearch guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=235 ctermbg=1 cterm=NONE
 hi WildMenu guifg=NONE guibg=#A1A6A8 guisp=#A1A6A8 gui=NONE ctermfg=NONE ctermbg=248 cterm=NONE
 hi SignColumn guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
 hi SpecialComment guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Title guifg=#d75f5f guibg=#e4e4e4 guisp=#e4e4e4 gui=bold ctermfg=167 ctermbg=254 cterm=bold
 hi Folded guifg=#192224 guibg=#A1A6A8 guisp=#A1A6A8 gui=italic ctermfg=235 ctermbg=248 cterm=NONE
 hi PreCondit guifg=#d75f5f guibg=NONE guisp=NONE gui=NONE ctermfg=167 ctermbg=NONE cterm=NONE
 hi Float guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
