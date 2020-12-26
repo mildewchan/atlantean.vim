@@ -11,7 +11,7 @@ Use whichever plugin manager you like. I'm partial to
 2. Run `:PlugInstall`
 3. Call `colorscheme atlantean` in .vimrc, or manually (for some reason)
 
-## Custom statusline
+## Custom statuslines
 This colorscheme includes theming for custom statuslines out of the box,
 which can do much of what plugins like powerline, airline, lightline, etc.
 can, but without bloating your init with hundreds of lines of vimscript.
