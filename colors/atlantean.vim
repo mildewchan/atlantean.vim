@@ -121,6 +121,7 @@ call s:ahi("DiffAdd", "NONE", "MildGreen")
 call s:ahi("Underlined", "SteelBlue", "NONE")
 call s:ahi("Title", "IndianRed", "NONE")
 call s:ahi("ModeMsg", "IndianRed", "NONE")
+call s:ahi("Float", "IndianRed", "NONE")
 call s:ahi("VertSplit", "Grey3", "MutedTurqouise")
 call s:ahi("StatusLineNC", "SharkGrey", "Grey2")
 call s:ahi("StatusLine", "MutedTurqouise", "White")
@@ -129,6 +130,7 @@ call s:ahi("WildMenu", "White", "SteelBlue")
 " underline explicitly disabled for some reason
 call s:ahi("CursorLine", "NONE", "Grey2")
 hi CursorLine gui=NONE cterm=NONE guisp=NONE
+"hi Float guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 "hi CursorLine guifg=NONE guibg=#222E30 guisp=#222E30 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 "hi StatusLine guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=bold ctermfg=235 ctermbg=1 cterm=bold
 "hi StatusLineNC guifg=#192224 guibg=#5E6C70 guisp=#5E6C70 gui=bold ctermfg=235 ctermbg=66 cterm=bold
@@ -201,7 +203,6 @@ hi SignColumn guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 cte
 hi SpecialComment guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Folded guifg=#192224 guibg=#A1A6A8 guisp=#A1A6A8 gui=italic ctermfg=235 ctermbg=248 cterm=NONE
 hi PreCondit guifg=#d75f5f guibg=NONE guisp=NONE gui=NONE ctermfg=167 ctermbg=NONE cterm=NONE
-hi Float guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 hi NonText guifg=#5E6C70 guibg=NONE guisp=NONE gui=italic ctermfg=66 ctermbg=NONE cterm=NONE
 hi ErrorMsg guifg=#A1A6A8 guibg=#912C00 guisp=#912C00 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
 hi Debug guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
